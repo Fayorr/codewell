@@ -1,0 +1,461 @@
+*{
+margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+font-family: 'Inter', sans-serif;
+}
+
+
+.nav {
+  padding: 1.3rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+    background-color: #fbf8f3;
+}
+.nav > div {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 35%;
+  padding-left: 8rem;
+  font-weight: 600;
+    font-size: .95rem;
+}
+
+.nav li{
+  align-items: center;
+
+}
+.bars{
+  display: none;
+}
+h3 {
+  margin-top: 2rem;
+  font-size: 4rem;
+  color: blue;
+}
+.btn-container{
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.btn{
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  
+}
+.in{
+background-color: transparent;
+font-weight: bold;
+}
+.up{
+background-color: #4d13d1;
+color: #fff;
+font-weight: bold;
+}
+.portfolio-rating{
+  display: flex;
+}
+.portfolio-rating ul{
+  list-style: none;
+}
+.portfolio-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 6rem;
+  background-color: #fbf8f3;
+}
+.portfolio-container ul{
+  display: flex;
+}
+.portfolio-text{
+padding: 7rem 0rem;
+}
+.portfolio-text h1{
+  font-size: 3.3rem;
+  font-weight: bolder;
+}
+.portfolio-text p {
+  font-size: 1rem;
+}
+.portfolio-rating{
+  font-size: .8rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.portfolio-rating ul{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1rem;
+}
+.portfolio-rating ul li{
+  padding-left: .3rem;
+}
+.portfolio-buttons{
+  margin: 1rem 0;
+}
+.btn-2{
+  border: none;
+    padding: 1rem;
+    font-size: .9rem;
+    margin-left: 1rem;
+    color: #4d13d1;
+    font-weight: 700;
+    text-decoration: underline;
+    background-color: #fbf8f3;
+}
+.portfolio-image{
+  width: 73%;
+  justify-content: center;
+}
+.portfolio-img{
+  width: 100%;
+}
+.portfolio-icons{
+  display: flex;
+  align-items: center;
+}
+.portfolio-icons p{
+  color: gray;
+  font-size: .89rem;
+  letter-spacing: .05rem;
+        display: flex;
+        align-items: center;
+}
+.portfolio-icons-p-1{
+      padding-right: 1.2rem;
+      display: flex;
+      align-items: center;
+}
+.portfolio-icons-p-1 svg{
+    width: 80%;
+    display: flex;
+}
+.portfolio-icons-p-2 svg{
+  width:80%;
+  display: flex;
+}
+
+/* DIVERSIFY SECTION  */
+.diversify-container{
+  padding: 4rem 6rem;
+}
+.diversify-container h2{
+  font-size: 2rem;
+  width: 60%;
+  padding: .7rem 0;
+}
+.diversify-container h6{
+  color: #4d13d1;
+  font-weight: 800;
+  letter-spacing: 0.01rem;
+}
+.diversify-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.build{
+  width: 30%;
+  padding: 0.8rem 0 2rem;
+}
+.build h6{
+color: #000;
+font-size: .8rem;
+padding: 1rem 0;
+}
+.build p{
+color: gray;
+font-size: .9rem;
+width: 90%;
+}
+.diversify-pan{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4d13d1;
+  width: 100%;
+  padding: 3rem 3rem 0rem;
+  color: #fff;
+}
+.diversify-pan-text{
+  height: 100%;
+  width: 50%;
+  padding: 2rem;
+}
+.diversify-pan-text h2{
+  font-size: 2.2rem;
+  width: 100%;
+  margin: 0 0 .4rem;
+}
+.diversify-pan-text p{
+margin: 0 0 1rem;
+width: 85%;
+letter-spacing: 0.015rem;
+font-weight: 300;
+}
+.diversify-btn{
+     color: #4d13d1;
+      background-color: #fff;
+      font-weight: bold;
+      border: 3px solid #fff;
+}
+.diversify-btn:hover, .diversify-btn:active{
+   border: 3px solid #fff;
+   background-color: #4d13d1;
+   color:#fff;
+   transition: .3s ease;
+ 
+}
+.diversify-pan-image{
+  background-color: blueviolet;
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.diversify-pan-image img{
+  width: 100%;
+}
+
+/* STYLES FOR FOOTER SECTION  */
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
+  padding-right: 6rem;
+  width: 100%;
+  background-color: #fbf8f3;
+}
+.footer-block{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 9rem;
+padding: 1rem 0;
+color: gray;
+}
+.footer-block li{
+  padding: .2rem 0;
+}
+.block-1{
+  width: 30%;
+}
+.footer-heading{
+  font-weight: bolder;
+  margin-bottom: .4rem;
+  color: #000;
+}
+
+
+
+
+
+@media screen and (max-width: 700px){
+  .bars{
+    display: block;
+  }
+  
+  .nav {
+    z-index: 20;
+    padding: 1.3rem 2rem;
+  }
+ .nav ul {
+   width: 100%;
+   height: 25vh;
+   padding: 0;
+   position: absolute;
+   top: 10%;
+   left: 0;
+   display: none;
+   background-color: red;
+   text-align: center;
+   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+   transition: 1s cubic-bezier(.68, -0.55, .27, 1.55);
+ }
+ .nav ul li{
+  padding: 1rem 2rem;
+  width: 100%;
+ }
+ .nav ul li:hover {
+background-color: #4d13d1;
+  transition: .2s ease-in
+ }
+
+ .nav-menu.active {
+width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   z-index: 10;
+   background-color: #fbf8f3;
+ }
+ .btn-container {
+   /* width: 15%; */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   display: none;
+ }
+ .btn-container.active{
+  display: none;
+ }
+  .portfolio-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+    .portfolio-rating{
+      display: none;
+    }
+    .portfolio-text{
+      padding-top: 23rem;
+    }
+    .portfolio-text h1{
+      font-size: 2.2rem;
+      margin-bottom: .5rem;
+      width: 50%;
+    }
+    .portfolio-image{
+      position: absolute;
+      top: 10%;
+      left: 10%;
+    }
+    .portfolio-buttons{
+      display: flex;
+      flex-direction: column;
+    }
+    .btn-2{
+      background-color: transparent;
+    }
+    .portfolio-icons{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .portfolio-icons-p-1{
+      margin: .5rem 0;
+    }
+    
+    .diversify-container{
+      padding: 3rem 2rem;
+    }
+    .diversify-pan{
+      flex-direction: column;
+      padding: 0rem;
+    }
+    .diversify-pan-text{
+      padding: 0;
+      width: 100%;
+    }
+    .diversify-section{
+      flex-direction: column;
+    }
+    .diversify-container h6{
+      font-size: 1.05rem;
+    }
+    .diversify-container h2{
+      font-size: 2.3rem;
+      width: 90%;
+    }
+    .build{
+      width: 100%;
+    }
+    .build p{
+      width: 100%;
+    }
+        .diversify-pan {
+          background-color: #4d13d1;
+          width: 100%;
+          padding: 3rem 2.5rem 0rem;
+          color: #fff;
+          border-radius: .7rem;
+        }
+    .diversify-pan-text h2{
+      font-size: 2.5rem;
+    }
+    .diversify-pan-text p {
+      margin-bottom: 2rem;
+    }
+      .diversify-btn {
+     width: 100%;
+     font-size: 1rem;
+     font-weight: 700;
+        margin-bottom: 3rem;
+      }
+    .diversify-pan-image{
+      width: 100%;
+    }
+
+.testimonial-container{
+  border: 1.3px solid lightgray;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  width: 87%;
+  margin: 0 auto;
+  
+}
+.hero{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.hero-image img{
+width: 100%;
+padding-right: 1rem;
+}
+.hero-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.hero-text h2{
+ font-size: 1rem;
+color:#4d13d1;
+padding: 0 0 .2rem;
+}
+.hero-text h3 {
+  font-size: .8rem;
+color: #000;
+  margin: 0;
+}
+.testimonial-p{
+margin: 1rem 0;
+width: 93%;
+line-height: 1.8rem;
+font-size: 1.3rem;
+}
+.test-btn{
+  width: 100%;
+  margin: 1rem 0;
+  font-weight: 800;
+  background-color: transparent;
+  color: #4d13d1;
+  border: 1.3px solid lightgray;
+}
+
+    .footer-container{
+      flex-direction: column;
+      width: 100%;
+      padding: 1rem 2rem;
+    }
+    .footer-block{
+      width: 100%;
+
+    }
+}
