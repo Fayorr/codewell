@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import '../App.css'
+import img from '../assets/Sign Up Image.png'
 
 const Signup = () => {
 
@@ -30,7 +31,7 @@ return (
         </div>
 
         <div className="image-section">
-            <img src="#" className="img-up" alt="examples" />
+            <img src={img} className="img-up" alt="examples" />
             <h2>Unparalleled Templates</h2>
             <p>Crafted by a team of professional designers, our templates are eunparalleled in the market.</p> 
             <div className="scroll">
