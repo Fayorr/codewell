@@ -47,7 +47,7 @@ return (
                 <button className="btn diversify-btn">Start Free Trial</button>
             </div>
             <div className="diversify-pan-image">
-                <img src={img} />
+                <img src={img} alt="" />
             </div>
        </div>
     </div>

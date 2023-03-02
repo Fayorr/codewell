@@ -10,7 +10,7 @@ return(
     <div className='testimonial-container'>
         <div className="hero">
             <div className="hero-image">
-                <img src={img} alt="display picture" />
+                <img src={img} alt="" />
             </div>
             <div className="hero-text">
                 <h2>Sarah Andrews</h2>

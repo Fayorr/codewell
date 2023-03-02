@@ -5,7 +5,7 @@ import Diversify from './components/Diversify';
 import Portfolio from './components/Portfolio';
 import Testimonial from './components/Testimonial';
 import Footer from './components/Footer';
-import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
         <Portfolio />
         <Diversify />
         <Testimonial />
+        <Signup />
         <Footer />
        
       </div>

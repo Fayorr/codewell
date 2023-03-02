@@ -258,10 +258,129 @@ color: gray;
   margin-bottom: .4rem;
   color: #000;
 }
+.testimonial-container {
+  border: 1.3px solid lightgray;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  width: 87%;
+  margin: 0 auto;
 
+}
 
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
 
+.hero-image img {
+  width: 100%;
+  padding-right: 1rem;
+}
 
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.hero-text h2 {
+  font-size: 1rem;
+  color: #4d13d1;
+  padding: 0 0 .2rem;
+}
+
+.hero-text h3 {
+  font-size: .8rem;
+  color: #000;
+  margin: 0;
+}
+
+.testimonial-p {
+  margin: 1rem 0;
+  width: 93%;
+  line-height: 1.8rem;
+  font-size: 1.3rem;
+}
+
+.test-btn {
+  width: 100%;
+  margin: 1rem 0;
+  font-weight: 800;
+  background-color: transparent;
+  color: #4d13d1;
+  border: 1.3px solid lightgray;
+}
+
+/* STYLES FOR SIGN-UP PAGE  */
+.form-container {
+  padding: 1rem 2rem;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section h3 {
+  color: #000;
+  font-size: 1.4rem;
+}
+
+.form-section h2 {
+  padding: 2.1rem 0 1.2rem;
+  font-size: 2.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: 600;
+  margin-bottom: 0 0 .5rem;
+}
+
+form input {
+  padding: .9rem 0;
+    border: 1.1px solid lightgrey;
+  border-radius: .3rem;
+  margin: .2rem 0 .9rem;
+}
+
+form ::placeholder {
+  padding: 1rem;
+}
+
+.terms {
+  display: flex;
+}
+.terms span{
+  font-weight: 800;
+  color: #4d13d1;
+  text-decoration: underline;
+}
+.terms p {
+  padding-left: .6rem;
+  font-size: .8rem;
+}
+
+#terms input {
+  justify-content: space-between;
+  font-size: 10rem;
+}
+.fiber-btn{
+  margin: 1rem 0;
+}
+.sign-in{
+  margin: 0 auto;
+}
+.sign-in span{
+  color: #4d13d1;
+}
 
 @media screen and (max-width: 700px){
   .bars{
@@ -280,11 +399,10 @@ color: gray;
    top: 10%;
    left: 0;
    display: none;
-   background-color: red;
    text-align: center;
    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
    transition: 1s cubic-bezier(.68, -0.55, .27, 1.55);
- }
+  }
  .nav ul li{
   padding: 1rem 2rem;
   width: 100%;
@@ -377,13 +495,13 @@ width: 100%;
     .build p{
       width: 100%;
     }
-        .diversify-pan {
-          background-color: #4d13d1;
-          width: 100%;
-          padding: 3rem 2.5rem 0rem;
-          color: #fff;
-          border-radius: .7rem;
-        }
+    .diversify-pan {
+      background-color: #4d13d1;
+      width: 100%;
+      padding: 3rem 2.5rem 0rem;
+      color: #fff;
+      border-radius: .7rem;
+    }
     .diversify-pan-text h2{
       font-size: 2.5rem;
     }
@@ -400,54 +518,54 @@ width: 100%;
       width: 100%;
     }
 
-.testimonial-container{
-  border: 1.3px solid lightgray;
-  border-radius: .5rem;
-  padding: 1rem 2rem;
-  width: 87%;
-  margin: 0 auto;
-  
-}
-.hero{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-.hero-image img{
-width: 100%;
-padding-right: 1rem;
-}
-.hero-text{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.hero-text h2{
- font-size: 1rem;
-color:#4d13d1;
-padding: 0 0 .2rem;
-}
-.hero-text h3 {
-  font-size: .8rem;
-color: #000;
-  margin: 0;
-}
-.testimonial-p{
-margin: 1rem 0;
-width: 93%;
-line-height: 1.8rem;
-font-size: 1.3rem;
-}
-.test-btn{
+  .testimonial-container{
+    border: 1.3px solid lightgray;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    width: 87%;
+    margin: 0 auto;
+    
+  }
+  .hero{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .hero-image img{
   width: 100%;
+  padding-right: 1rem;
+  }
+  .hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .hero-text h2{
+  font-size: 1rem;
+  color:#4d13d1;
+  padding: 0 0 .2rem;
+  }
+  .hero-text h3 {
+    font-size: .8rem;
+  color: #000;
+    margin: 0;
+  }
+  .testimonial-p{
   margin: 1rem 0;
-  font-weight: 800;
-  background-color: transparent;
-  color: #4d13d1;
-  border: 1.3px solid lightgray;
-}
+  width: 93%;
+  line-height: 1.8rem;
+  font-size: 1.3rem;
+  }
+  .test-btn{
+    width: 100%;
+    margin: 1rem 0;
+    font-weight: 800;
+    background-color: transparent;
+    color: #4d13d1;
+    border: 1.3px solid lightgray;
+  }
 
     .footer-container{
       flex-direction: column;
@@ -457,5 +575,55 @@ font-size: 1.3rem;
     .footer-block{
       width: 100%;
 
+    }
+
+    /* STYLES FOR SIGN-UP PAGE  */
+
+    .form-container {
+      padding: 1rem 2rem;
+    }
+    .form-section{
+      display: flex;
+      flex-direction: column;
+    }
+    .form-section h3{
+      color: #000;
+      font-size: 1.4rem;
+    }
+    .form-section h2{
+      padding: 2.1rem 0 1.2rem;
+      font-size: 2.5rem;
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+    }
+    form label{
+      font-weight: 600;
+      margin-bottom: 0 0 .5rem;
+    }
+    form input{
+      padding: .9rem 0;
+      border: 1.1px solid lightgrey;
+      border-radius: .3rem;
+      margin: .2rem 0 .9rem;
+    }
+    form ::placeholder{
+      padding: 1rem;
+    }
+    .terms{
+      display: flex;
+    }
+
+    .terms p{
+      padding-left: .6rem;
+      font-size: .8rem;
+    }
+   #terms input{
+      justify-content: space-between;
+      font-size: 10rem;
+    }
+    .image-section{
+      display: none;
     }
 }
