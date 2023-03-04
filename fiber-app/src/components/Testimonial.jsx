@@ -1,27 +1,48 @@
 import React from 'react'
-import img from "../assets/User Avatar.svg"
-// import Glide from '@glidejs/glide'
+import Slider from "react-slick";
+import data from "./data";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../App.css"
 
-// new Glide('.glide').mount()
-
-
-const Testimonial = () => {
+const Card = ({fullname, image, subHeading, paragraph, button}) => {
+    
 return(
     <div className='testimonial-container'>
         <div className="hero">
             <div className="hero-image">
-                <img src={img} alt="" />
+                <img src={image} alt="" />
             </div>
             <div className="hero-text">
-                <h2>Sarah Andrews</h2>
-                <h3>$100k in revenue</h3>
+                <h2>{fullname}</h2>
+                <h3>{subHeading}</h3>
             </div>
-
         </div>
-        <p className='testimonial-p'>Setting up my portfolio with Fiber took no more than 10 minutes. Since then, my portfolio has attracted a lot of clients and made me more than $100k.</p>
-        <button className='btn test-btn'>View Sarah's Portfolio</button>
+        <p className='testimonial-p'>{paragraph}</p>
+        <button className='btn test-btn'>{button}</button>
     </div>
 );
+}
+
+const Testimonial = () => {
+      const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+
+    return(
+        <>
+        <Slider {...settings}>
+        {data.map(function(data){
+            return   <Card {...data} key={data.id}/>
+        })}
+        </Slider>
+        </>
+    )
 }
 
 export default Testimonial;
