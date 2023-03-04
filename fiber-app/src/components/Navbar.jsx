@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import '../App.css';
 
 
@@ -28,8 +29,8 @@ return (
         </div>
         <div className={toggle ? "btn-container" : "btn-container active"}>
            
-            <button className="btn in">Sign In</button>
-            <button className="btn up">Sign Up</button>
+            <Link to="signin"><button className="btn in">Sign In</button></Link>
+           <Link to="signup"> <button className="btn up">Sign Up</button></Link>
         </div>
     </div>
     )
