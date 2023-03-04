@@ -1,6 +1,7 @@
 import React from "react";
 import '../App.css'
 import img from '../assets/Page Image.png'
+import { Link } from "react-router-dom"
 
 const Diversify = () => {
 return (
@@ -44,7 +45,7 @@ return (
             <div className="diversify-pan-text">
                 <h2>Diversify your portfolio.</h2>
                 <p>Create an even more impressive portfolio by creating case studies for your projects. Simply follow our step-by-step guide.</p>
-                <button className="btn diversify-btn">Start Free Trial</button>
+                 <Link to="signin"><button className="btn diversify-btn">Start Free Trial</button></Link>
             </div>
             <div className="diversify-pan-image">
                 <img src={img} alt="" />

@@ -1,6 +1,7 @@
 import React from "react";
 import '../App.css'
 import  img from '../assets/hero-Illustration.png'
+import { Link } from "react-router-dom"
 
 const Portfolio = () => {
 return (
@@ -35,7 +36,7 @@ return (
             <h1>Create your portfolio in minutes.</h1>
             <p>With Fiber, you can setup your own personal portfolio in minutes with dozens of premade, beautiful templates.</p>
             <div className="portfolio-buttons">
-                <button className="btn up">Start Free Trial</button>
+                 <Link to="signin"><button className="btn up">Start Free Trial</button></Link>
                 <button className="btn-2">View Examples</button>
             </div>
             <div className="portfolio-icons">
