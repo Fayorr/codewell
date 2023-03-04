@@ -269,33 +269,46 @@ color: gray;
   .slick-slider {
     display: block;
     position: relative;
-    /* justify-content: space-between; */
-    /* width: 100%; */
-    /* height: 90%; */
-    /* margin-top: -3rem; */
+      padding: 1rem 0rem 0 5rem;
+    justify-content: space-between;
+    width: 100%;
     
-        }
+    
+  }
+  /* Responsible for space in between slides */
+    .slick-slide{
+      padding-right: 1rem;
+    } 
   .slick-dots {
     position: absolute;
-    top: 40%;
+    top: 105%;
     left:0;
     max-width: 100%;
     height: 35px;
   }
-
-
-
-
-
-
+.sliderClass{
+  margin-right: 12rem;
+  display: flex;
+  justify-content: space-between;
+  /* width: 150%; */
+  padding-right: 2rem;
+}
   
-
-.testimonial-container {
-  border: 1.3px solid lightgray;
+  
+  
+  
+  
+  
+  
+  .testimonial-container {
+    border: 1.3px solid lightgray;
+    /* background-color: red; */
   border-radius: .5rem;
   padding: 1rem 2rem;
-  width: 87%;
+  width: 100%;
   margin: 0 auto;
+  /* display: flex; */
+  
 
 }
 
@@ -304,6 +317,7 @@ color: gray;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 1rem;
+
 }
 
 .hero-image img {
@@ -598,6 +612,7 @@ width: 100%;
     padding: 1rem 2rem;
     width: 87%;
     margin: 0 auto;
+    /* margin-right: 7rem; */
     
   }
   .hero{
@@ -710,10 +725,13 @@ width: 100%;
           position: relative;
           width: 100%;
           height: auto;
+          padding: 1rem 2rem;
           
     
         }
-    
+        .slick-slide {
+          padding-right: 0;
+        }
         .slick-dots {
           color: #4d13d1;
           position: absolute;

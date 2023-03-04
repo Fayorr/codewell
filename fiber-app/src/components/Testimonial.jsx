@@ -30,17 +30,40 @@ const Testimonial = () => {
       infinite: true,
       speed: 500,
       arrows: false,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
+     slidesToShow: 3,
+      slidesToScroll: 3,
+      initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        }
+        // ,
+        // {
+        //   breakpoint: 350,
+        //   settings: {
+        //     slidesToShow: 1,
+        //     slidesToScroll: 3,
+        //     initialSlide: 1,
+        //      infinite: true,
+        //     dots: true
+        //   }
+        // }
+    ]
+};
 
     return(
         <>
-        <Slider {...settings}>
-        {data.map(function(data){
-            return   <Card {...data} key={data.id}/>
-        })}
-        </Slider>
+            <Slider {...settings} className="sliderClass">
+            {data.map(function(data){
+                return   <Card {...data} key={data.id}/>
+            })}
+            </Slider>
         </>
     )
 }
