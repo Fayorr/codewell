@@ -1,20 +1,19 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import '../App.css';
-
-
+import { motion } from "framer-motion"
 
 
 
 const Navbar = () => {
 
-// const [nav, setNav] = useState(false);
 
 const [toggle, setToggle] = useState(false);
 
 function handleClick() {
     setToggle(!toggle);
 }
+
       
 return (
     <div className="nav">
@@ -24,9 +23,12 @@ return (
             <li>Pricing</li>
             <li>Features</li>            
         </ul>
-        <div className="bars" onClick={handleClick}>
+        <motion.div animate={{x: 10, scale:1}} initial={{scale:0}} transition={{
+        duration: 1.2,
+        ease: "easeInOut",
+      }}className="bars" onClick={handleClick}>
             <i className={toggle ? "fa-sharp fa-solid fa-xmark" : "fa-solid fa-bars"} aria-hidden="true"></i>
-        </div>
+        </motion.div>
         <div className={toggle ? "btn-container" : "btn-container active"}>
            
             <Link to="signin"><button className="btn in">Sign In</button></Link>
