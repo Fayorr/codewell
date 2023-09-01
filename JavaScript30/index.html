@@ -1,21 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>JavaScript30</title>
   </head>
-  <body>
-     <nav>
+  <body class="box-border py-14 px-8 md:px-10 m-0 bg-[#f3ede5] font-inter">
+    <nav>
       <img src="./Assets/Logo.svg" alt="logo" />
-      <div class="navigation">
+      <div class="navigation hidden md:block">
         <ul>
           <li>Products</li>
           <li>Challenges</li>
           <li>Resources</li>
           <li>Other Links</li>
         </ul>
-        <div class="product-dropdown">
+        <div class="product-dropdown hidden md:block">
           <div class="hero-container">
             <img src="./Assets/Spense_Icon.svg" alt="Spense_Icon" srcset="" />
             <div class="hero-text">
@@ -48,7 +57,7 @@
           </div>
         </div>
       </div>
-      <div class="signup">
+      <div class="signup hidden md:block">
         <ul>
           <li>Sign in</li>
           <li>Try for free</li>
@@ -56,15 +65,24 @@
       </div>
     </nav>
     <section class="first-section-container">
-      <div class="first">
-        <h1>Ondeck is your remote conference calling tool</h1>
-        <p>
+      <div class="first mx-2">
+        <h1 class="text-black-900 font-bold text-5xl mb-2 bg-red-500 w-screen">
+          Ondeck is your remote
+          <span class="text-yellow-500">conference calling tool</span>
+        </h1>
+        <p class="text-sm text-gray-600">
           Ondeck is a service that allows you to create beautiful, online, and
           encrypted video calls for you and your remote team.
         </p>
-        <button>Try for free</button>
-        <div class="rating">
-          <p>5.0 Rating based on reviews from:</p>
+        <button
+          class="bg-[#133416] rounded px-8 py-3 text-white font-bold text-sm my-4 mb-5"
+        >
+          Try for free
+        </button>
+        <div class="rating flex justify-between w-full">
+          <p class="text-sm text-gray-600 mb-2">
+            5.0 Rating based on reviews from:
+          </p>
           <img src="./Assets/Capterra Logo.svg" alt="company Logo" srcset="" />
           <img
             src="./Assets/AlternativeTo Logo.svg"
@@ -74,19 +92,42 @@
           <img src="./Assets/Capterra Logo.svg" alt="company Logo" srcset="" />
         </div>
       </div>
-      <div class="second">
+      <div class="second w-40 mb-8 hidden md:block">
         <img src="./Assets/Hero Image.png " alt="hero_image" srcset="" />
       </div>
     </section>
 
     <section class="second-section">
-      <p>Trusted by 3+ million people at companies like</p>
-      <div class="company-logo">
-        <img src="./Assets/Netflix Logo.svg" alt="Netflix Logo" srcset="" />
-        <img src="./Assets/Shopify Logo.svg" alt="Shopify Logo" srcset="" />
-        <img src="./Assets/Spotify Logo.svg" alt="Spotify Logo" srcset="" />
-        <img src="./Assets/Walmart Logo.svg" alt="Walmart Logo" srcset="" />
+      <p class="text-center text-sm text-gray-600 mt-10 mb-3">
+        Trusted by 3+ million people at companies like
+      </p>
+      <div class="company-logo flex w-screen wrap bg-red-500 h-auto">
+        <img
+          class="w-1/2"
+          src="./Assets/Netflix Logo.svg"
+          alt="Netflix Logo"
+          srcset=""
+        />
+        <img
+          class="w-1/2"
+          src="./Assets/Shopify Logo.svg"
+          alt="Shopify Logo"
+          srcset=""
+        />
+        <img
+          class="w-1/2"
+          src="./Assets/Spotify Logo.svg"
+          alt="Spotify Logo"
+          srcset=""
+        />
+        <img
+          class="w-1/2"
+          src="./Assets/Walmart Logo.svg"
+          alt="Walmart Logo"
+          srcset=""
+        />
       </div>
     </section>
+    <script src="app.js"></script>
   </body>
 </html>
