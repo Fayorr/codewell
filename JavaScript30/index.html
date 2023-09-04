@@ -14,7 +14,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>JavaScript30</title>
   </head>
-  <body class="box-border py-14 px-8 md:px-10 m-0 bg-[#f3ede5] font-inter">
+  <body class="box-border py-14 px-4 md:px-10 m-0 bg-[#f3ede5] font-inter">
     <nav>
       <img src="./Assets/Logo.svg" alt="logo" />
       <div class="navigation hidden md:block">
@@ -66,7 +66,7 @@
     </nav>
     <section class="first-section-container">
       <div class="first mx-2">
-        <h1 class="text-black-900 font-bold text-5xl mb-2 bg-red-500 w-screen">
+        <h1 class="text-black-900 font-bold text-5xl mb-2 bg-red-500 w-full">
           Ondeck is your remote
           <span class="text-yellow-500">conference calling tool</span>
         </h1>
@@ -79,17 +79,27 @@
         >
           Try for free
         </button>
-        <div class="rating flex justify-between w-full">
-          <p class="text-sm text-gray-600 mb-2">
+        <div class="rating flex justify-start w-full bg-yellow-200">
+          <p class="text-sm text-gray-600 mb-2 tracking-wider">
             5.0 Rating based on reviews from:
           </p>
-          <img src="./Assets/Capterra Logo.svg" alt="company Logo" srcset="" />
-          <img
-            src="./Assets/AlternativeTo Logo.svg"
-            alt="Company Logo"
-            srcset=""
-          />
-          <img src="./Assets/Capterra Logo.svg" alt="company Logo" srcset="" />
+          <div class="flex  w-[7rem] justify-between ml-4">
+            <img
+              src="./Assets/Capterra Logo.svg"
+              alt="company Logo"
+              srcset=""
+            />
+            <img
+              src="./Assets/AlternativeTo Logo.svg"
+              alt="Company Logo"
+              srcset=""
+            />
+            <img
+              src="./Assets/Capterra Logo.svg"
+              alt="company Logo"
+              srcset=""
+            />
+          </div>
         </div>
       </div>
       <div class="second w-40 mb-8 hidden md:block">
@@ -101,31 +111,38 @@
       <p class="text-center text-sm text-gray-600 mt-10 mb-3">
         Trusted by 3+ million people at companies like
       </p>
-      <div class="company-logo flex w-screen wrap bg-red-500 h-auto">
-        <img
-          class="w-1/2"
-          src="./Assets/Netflix Logo.svg"
-          alt="Netflix Logo"
-          srcset=""
-        />
-        <img
-          class="w-1/2"
-          src="./Assets/Shopify Logo.svg"
-          alt="Shopify Logo"
-          srcset=""
-        />
-        <img
-          class="w-1/2"
-          src="./Assets/Spotify Logo.svg"
-          alt="Spotify Logo"
-          srcset=""
-        />
-        <img
-          class="w-1/2"
-          src="./Assets/Walmart Logo.svg"
-          alt="Walmart Logo"
-          srcset=""
-        />
+      <div
+        class="company-logo flex flex-col md:flex-row justify-between bg-red-500"
+      >
+        <!-- w-full flex-wrap  gap-y-1  h-auto -->
+        <div class="flex justify-between">
+          <img
+            class="w-[50%] pr-8 md:pr-0"
+            src="./Assets/Netflix Logo.svg"
+            alt="Netflix Logo"
+            srcset=""
+          />
+          <img
+            class="w-[52%]"
+            src="./Assets/Shopify Logo.svg"
+            alt="Shopify Logo"
+            srcset=""
+          />
+        </div>
+        <div class="flex justify-between">
+          <img
+            class="w-[55%] pr-6 md:pr-0"
+            src="./Assets/Spotify Logo.svg"
+            alt="Spotify Logo"
+            srcset=""
+          />
+          <img
+            class="w-[54%]"
+            src="./Assets/Walmart Logo.svg"
+            alt="Walmart Logo"
+            srcset=""
+          />
+        </div>
       </div>
     </section>
     <script src="app.js"></script>
