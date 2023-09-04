@@ -14,8 +14,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>JavaScript30</title>
   </head>
-  <body class="box-border py-14 px-4 md:px-10 m-0 bg-[#f3ede5] font-inter">
-    <nav class="mb-6 flex justify-between items-center">
+  <body
+    class="relative box-border py-10 px-4 md:px-10 m-0 bg-[#f3ede5] font-inter"
+  >
+    <nav class="mb-6 flex justify-between items-center md:px-8">
       <img src="./Assets/Logo.svg" alt="logo" />
       <div class="navigation md:block">
         <ul class="hidden">
@@ -24,7 +26,7 @@
           <li>Resources</li>
           <li>Other Links</li>
         </ul>
-        <div class="cursor-pointer menu-button">
+        <div class="cursor-pointer menu-button md:hidden">
           <img
             class="w-8"
             src="./Assets/Menu.svg"
@@ -34,14 +36,20 @@
         </div>
       </div>
       <div class="signup hidden md:block">
-        <ul>
-          <li>Sign in</li>
-          <li>Try for free</li>
+        <ul class="flex justify-between w-auto items-center">
+          <li class="text-gray-600">Sign in</li>
+          <li
+            class="bg-[#133416] rounded px-8 py-3 text-white font-bold text-sm ml-8"
+          >
+            Try for free
+          </li>
         </ul>
       </div>
     </nav>
 
-    <div class="product-dropdown hidden bg-gray-100 rounded-[.8rem] p-8 mb-4">
+    <div
+      class="absolute top-[1rem] left-[1.5rem] product-dropdown hidden bg-gray-100 rounded-[.8rem] p-8 w-[95%]"
+    >
       <div class="flex justify-between mb-4 font-bold text-[#88aed0]">
         <h2 class="">Product</h2>
         <p class="close cursor-pointer">X</p>
@@ -79,15 +87,17 @@
         </div>
       </div>
     </div>
-    <section class="first-section-container">
-      <div class="first mx-2">
+    <section
+      class="first-section-container flex flex-col md:flex-row justify-between items-center w-[100%] md:px-8 md:py-16"
+    >
+      <div class="first mx-2 md:w-[70%] md:pr-4">
         <h1
-          class="text-black-900 font-bold text-[2.3rem] leading-tight mb-2 bg-red-500 w-full"
+          class="text-black-900 font-bold text-[2.3rem] md:text-[3.3rem] leading-tight mb-2 md:mb-4 w-full"
         >
           Ondeck is your remote
           <span class="text-yellow-500">conference calling tool</span>
         </h1>
-        <p class="text-sm text-gray-600">
+        <p class="text-sm text-gray-600 md:w-[75%]">
           Ondeck is a service that allows you to create beautiful, online, and
           encrypted video calls for you and your remote team.
         </p>
@@ -96,7 +106,7 @@
         >
           Try for free
         </button>
-        <div class="rating flex justify-start w-full bg-yellow-200">
+        <div class="rating flex justify-start w-full">
           <p class="text-sm text-gray-600 mb-2 tracking-wide">
             5.0 Rating based on reviews from:
           </p>
@@ -119,42 +129,42 @@
           </div>
         </div>
       </div>
-      <div class="second w-40 mb-8 hidden md:block">
+      <div class="second md:w-[33%] mb-8 hidden md:block">
         <img src="./Assets/Hero Image.png " alt="hero_image" srcset="" />
       </div>
     </section>
 
     <section class="second-section">
-      <p class="text-center text-sm text-gray-600 mt-10 mb-3">
+      <p class="text-center text-sm text-gray-600 mt-10 mb-3 md:mb-8">
         Trusted by 3+ million people at companies like
       </p>
       <div
-        class="company-logo flex flex-col md:flex-row justify-between bg-red-500"
+        class="company-logo flex flex-col md:flex-row md:w-full justify-between md:justify-center"
       >
         <!-- w-full flex-wrap  gap-y-1  h-auto -->
         <div class="flex justify-between">
           <img
-            class="w-[50%] pr-8 md:pr-0"
+            class="w-[50%] md:w-[40%] pr-8 md:pr-0"
             src="./Assets/Netflix Logo.svg"
             alt="Netflix Logo"
             srcset=""
           />
           <img
-            class="w-[50%]"
+            class="w-[50%] md:w-[40%]"
             src="./Assets/Shopify Logo.svg"
             alt="Shopify Logo"
             srcset=""
           />
         </div>
-        <div class="flex justify-between">
+        <div class="flex justify-between md:ml-16">
           <img
-            class="w-[50%] pr-6 md:pr-0"
+            class="w-[50%] md:w-[40%] pr-6 md:pr-0"
             src="./Assets/Spotify Logo.svg"
             alt="Spotify Logo"
             srcset=""
           />
           <img
-            class="w-[50%]"
+            class="w-[50%] md:w-[40%]"
             src="./Assets/Walmart Logo.svg"
             alt="Walmart Logo"
             srcset=""
