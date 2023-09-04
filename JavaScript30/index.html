@@ -15,7 +15,7 @@
     <title>JavaScript30</title>
   </head>
   <body class="box-border py-14 px-4 md:px-10 m-0 bg-[#f3ede5] font-inter">
-    <nav class="mb-3 flex justify-between items-center">
+    <nav class="mb-6 flex justify-between items-center">
       <img src="./Assets/Logo.svg" alt="logo" />
       <div class="navigation md:block">
         <ul class="hidden">
@@ -24,40 +24,13 @@
           <li>Resources</li>
           <li>Other Links</li>
         </ul>
-        <div class="cursor-pointer">
-          <img src="./Assets/Menu.svg" alt="hamburger-menu" srcset="" />
-        </div>
-        <div class="product-dropdown hidden md:block">
-          <div class="hero-container">
-            <img src="./Assets/Spense_Icon.svg" alt="Spense_Icon" srcset="" />
-            <div class="hero-text">
-              <h2>Spense</h2>
-              <p>
-                Spense is a landing page for writers. Great for practicing
-                absolute positioning and flex layouts.
-              </p>
-            </div>
-          </div>
-          <div class="hero-container">
-            <img src="./Assets/Fiber_Icon.svg" alt="Fiber_Icon" srcset="" />
-            <div class="hero-text">
-              <h2>Fiber Landing Page</h2>
-              <p>
-                An online portfolio generator. Great to practice flex/grid
-                layouts, and absolute positioning.
-              </p>
-            </div>
-          </div>
-          <div class="hero-container">
-            <img src="./Assets/Gradie_Icon.svg" alt="Gradie_Icon" srcset="" />
-            <div class="hero-text">
-              <h2>Gradie Sign Up Page</h2>
-              <p>
-                Gradie is a simple sign up page, great to practice centering
-                layouts.
-              </p>
-            </div>
-          </div>
+        <div class="cursor-pointer menu-button">
+          <img
+            class="w-8"
+            src="./Assets/Menu.svg"
+            alt="hamburger-menu"
+            srcset=""
+          />
         </div>
       </div>
       <div class="signup hidden md:block">
@@ -67,6 +40,45 @@
         </ul>
       </div>
     </nav>
+
+    <div class="product-dropdown hidden bg-gray-100 rounded-[.8rem] p-8 mb-4">
+      <div class="flex justify-between mb-4 font-bold text-[#88aed0]">
+        <h2 class="">Product</h2>
+        <p class="close cursor-pointer">X</p>
+      </div>
+      <div
+        class="hero-container flex items-start justify-between w-[100%] mb-3"
+      >
+        <img src="./Assets/Spense_Icon.svg" alt="Spense_Icon" srcset="" />
+        <div class="hero-text pl-4">
+          <h2 class="font-bold text-sm py-1">Spense</h2>
+          <p class="text-sm w-[82%]">
+            Spense is a landing page for writers. Great for practicing absolute
+            positioning and flex layouts.
+          </p>
+        </div>
+      </div>
+      <div class="hero-container flex items-start justify-between mb-3">
+        <img src="./Assets/Fiber_Icon.svg" alt="Fiber_Icon" srcset="" />
+        <div class="hero-text pl-4">
+          <h2 class="font-bold text-sm py-1">Fiber Landing Page</h2>
+          <p class="text-sm w-[82%]">
+            An online portfolio generator. Great to practice flex/grid layouts,
+            and absolute positioning.
+          </p>
+        </div>
+      </div>
+      <div class="hero-container flex items-start justify-between mb-3">
+        <img src="./Assets/Gradie_Icon.svg" alt="Gradie_Icon" srcset="" />
+        <div class="hero-text pl-4">
+          <h2 class="font-bold text-sm py-1">Gradie Sign Up Page</h2>
+          <p class="text-sm w-[82%]">
+            Gradie is a simple sign up page, great to practice centering
+            layouts.
+          </p>
+        </div>
+      </div>
+    </div>
     <section class="first-section-container">
       <div class="first mx-2">
         <h1
