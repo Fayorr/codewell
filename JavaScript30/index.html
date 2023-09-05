@@ -15,13 +15,13 @@
     <title>JavaScript30</title>
   </head>
   <body
-    class="relative box-border py-10 px-4 md:px-10 m-0 bg-[#f3ede5] font-inter"
+    class="relative box-border py-10 px-4 md:px-10 m-0 bg-[#f3ede5] font-inter select-none"
   >
     <nav class="mb-6 flex justify-between items-center md:px-8">
       <img class="md:w-[10%]" src="./Assets/Logo.svg" alt="logo" />
       <div class="navigation md:block">
         <ul class="hidden md:flex justify-between w-[130%] text-gray-600">
-          <li class="cursor-pointer">Products</li>
+          <li class="cursor-pointer product-desktop">Products</li>
           <li class="cursor-pointer">Challenges</li>
           <li class="cursor-pointer">Resources</li>
           <li class="cursor-pointer">Other Links</li>
@@ -48,9 +48,9 @@
     </nav>
 
     <div
-      class="absolute top-[1rem] left-[1.5rem] product-dropdown hidden bg-gray-100 rounded-[.8rem] p-8 w-[95%]"
+      class="absolute top-[1rem] left-[1.5rem] product-dropdown hidden bg-gray-100 rounded-[.8rem] p-8 w-[95%] md:w-1/3 md:top-[5rem] md:left-[20rem]"
     >
-      <div class="flex justify-between mb-4 font-bold text-[#88aed0]">
+      <div class="flex justify-between mb-4 font-bold text-[#88aed0] md:hidden">
         <h2 class="">Product</h2>
         <p class="close cursor-pointer">X</p>
       </div>
@@ -58,7 +58,7 @@
         class="hero-container flex items-start justify-between w-[100%] mb-3"
       >
         <img src="./Assets/Spense_Icon.svg" alt="Spense_Icon" srcset="" />
-        <div class="hero-text pl-4">
+        <div class="hero-text pl-4 cursor-pointer">
           <h2 class="font-bold text-sm py-1">Spense</h2>
           <p class="text-sm w-[82%]">
             Spense is a landing page for writers. Great for practicing absolute
@@ -68,7 +68,7 @@
       </div>
       <div class="hero-container flex items-start justify-between mb-3">
         <img src="./Assets/Fiber_Icon.svg" alt="Fiber_Icon" srcset="" />
-        <div class="hero-text pl-4">
+        <div class="hero-text pl-4 cursor-pointer">
           <h2 class="font-bold text-sm py-1">Fiber Landing Page</h2>
           <p class="text-sm w-[82%]">
             An online portfolio generator. Great to practice flex/grid layouts,
@@ -78,7 +78,7 @@
       </div>
       <div class="hero-container flex items-start justify-between mb-3">
         <img src="./Assets/Gradie_Icon.svg" alt="Gradie_Icon" srcset="" />
-        <div class="hero-text pl-4">
+        <div class="hero-text pl-4 cursor-pointer">
           <h2 class="font-bold text-sm py-1">Gradie Sign Up Page</h2>
           <p class="text-sm w-[82%]">
             Gradie is a simple sign up page, great to practice centering
